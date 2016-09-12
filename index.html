@@ -1,198 +1,219 @@
 <html>
 
 <head>
-    <title>AU Brasil - Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</title>
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/white.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <style type="text/css">
-        .reveal .footer {
-            position: absolute;
-            bottom: 0px;
-            font-size: 0.5em;
-            background-color: #FFFFFF;
-            width: 100%;
-            z-index: 1
-        }
-        
-        img.icons {
-            vertical-align: middle;
-            height: 40px;
-        }
-    </style>
+  <title>AU Brasil 2016 - Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <style type="text/css">
+    .reveal .footer {
+      position: absolute;
+      bottom: 0px;
+      font-size: 0.5em;
+      background-color: #FFFFFF;
+      width: 100%;
+      z-index: 1
+    }
+
+    img.icons {
+      vertical-align: middle;
+      height: 40px;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
-            <section data-background-image="img/background_title.png">
-                <h3>Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</h3>
-            </section>
-            <section data-background-video="img/Avaliacao_Aplicativo_AUBR16.mp4" data-background-video-loop data-background-video-muted>
-            </section>
-            <section data-background-image="img/background_title.png">
-                <h3>Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</h3>
-                <p>Augusto Gon&ccedil;alves
-                    <br/> Developer Advocate
-                    <br/>
-                    <img src="img/twitter_logo.png" class="icons"> @augustomaia</p>
-            </section>
-            <section>
-                <h2>Agenda</h2>
-                <ul>
-                    <li>Exemplos!</li>
-                    <li>Vis&atilde;o geral (<i>stack</i>)</li>
-                    <li>Ferramentas</li>
-                    <li>Mais exemplos!</li>
-                    <li>Pr&oacute;ximos passos</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Vamos ao primeiro exemplo!</h2>
-                <ul>
-                    <p>Precisamos de algumas contas:</p>
-                    <li><img src="img/forge_logo.png" class="icons" /> <a href="http://developer.autodesk.com" target="_blank">Forge</a></li>
-                    <li><img src="img/heroku-512.png" class="icons" /> <a href="http://www.heroku.com" target="_blank">Heroku</a></li>
-                </ul>
-                <p>
-                    <a href="https://github.com/augustogoncalves/forge-3leg.nodejs-template" target="_blank"><img src="img/deployheroku.png" /></a>
-                </p>
-            </section>
-            <section>
-                <h2>Vis&atilde;o geral: <i>full stack</i></h2>
-                <img data-src="img/full_stack.png" />
-            </section>
-            <section>
-                <h2>O que vamos usar?</h2>
-                <ul>
-                    <li>Linguagem: <img src="img/nodejs.png" class="icons"></li>
-                    <li>Reposit&oacute;rios: <img src="img/github_logo.png" class="icons"> Github</li>
-                    <li>IDE: <img src="img/c9_logo.png" class="icons" /> Cloud9 &amp; <img src="img/webstorm.png" class="icons" /> Webstorm</li>
-                    <li>Host: <img src="img/heroku-512.png" class="icons" /> Heroku</li>
-                    <li>Dom&iacute;nio: <img src="img/reg_br.jpg" class="icons"></li>
-                </ul>
-            </section>
-            <section>
-                <img src="img/language_rank.png" />
-                <small>Fonte: <a href="http://redmonk.com/sogrady/2016/02/19/language-rankings-1-16/">RedMonk</a></small>
-            </section>
-            <section>
-                <p><img src="img/nodejs.png" height="100"></p>
-                <ul>
-                    <li class="fragment fade-in">Motor JavaScript do Chrome</li>
-                    <li class="fragment fade-in">Baseado em eventos</li>
-                    <li class="fragment fade-in"><i>Non-blocking</i></li>
-                    <li class="fragment fade-in">Pacotes <img src="img/npm_logo.png" class="icons"></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Pr&oacute;ximo exemplo: edi&ccedil;&atilde;o!</h2>
-                <p>Online: criar um reposit&oacute;rio <img src="img/github_logo.png" class="icons">, editar <img src="img/c9_logo.png" class="icons" />, publicar <img src="img/heroku-512.png" class="icons" /></p>
-                <ul>
-                    <p>Precisamos de mais algumas contas:</p>
-                    <li><img src="img/github_logo.png" class="icons" /> <a href="http://github.com" target="_blank">Github</a></li>
-                    <li><img src="img/c9_logo.png" class="icons" /> <a href="http://c9.io" target="_blank">Cloud 9</a></li>
-                </ul>
-                <div class="fragment">#ficaadica: vamos precisar disso:
-                    <pre><code class="hljs">
+<div class="reveal">
+  <div class="slides">
+    <section data-background-image="img/background_title.png">
+      <h3>Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</h3>
+    </section>
+    <section data-background-video="img/Avaliacao_Aplicativo_AUBR16.mp4" data-background-video-loop
+             data-background-video-muted>
+    </section>
+    <section data-background-image="img/background_title.png">
+      <h3>Seu primeiro aplicativo web com Autodesk Forge &amp; JavaScript</h3>
+      <p>Augusto Gon&ccedil;alves
+        <br/> Developer Advocate
+        <br/>
+        <img src="img/twitter_logo.png" class="icons"> @augustomaia</p>
+    </section>
+    <section>
+      <h2>Agenda</h2>
+      <ul>
+        <li>Exemplos!</li>
+        <li>Vis&atilde;o geral (<i>stack</i>)</li>
+        <li>Ferramentas</li>
+        <li>Mais exemplos!</li>
+        <li>Pr&oacute;ximos passos</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Vamos ao primeiro exemplo!</h2>
+      <ul>
+        <p>Precisamos de algumas contas:</p>
+        <li>
+          <img src="img/forge_logo.png" class="icons"/>
+          <a href="http://developer.autodesk.com" target="_blank">Forge</a></li>
+        <li><img src="img/heroku-512.png" class="icons"/> <a href="http://www.heroku.com" target="_blank">Heroku</a>
+        </li>
+      </ul>
+      <p>
+        <a href="https://github.com/augustogoncalves/forge-3leg.nodejs-template" target="_blank">
+          <img src="img/deployheroku.png"/></a>
+      </p>
+    </section>
+    <section>
+      <h2>Vis&atilde;o geral: <i>full stack</i></h2>
+      <img data-src="img/full_stack.png"/>
+    </section>
+    <section>
+      <h2>O que vamos usar?</h2>
+      <ul>
+        <li>Linguagem: <img src="img/nodejs.png" class="icons"></li>
+        <li>Reposit&oacute;rios: <img src="img/github_logo.png" class="icons"> Github</li>
+        <li>IDE: <img src="img/c9_logo.png" class="icons"/> Cloud9 &amp; <img src="img/webstorm.png" class="icons"/>
+          Webstorm
+        </li>
+        <li>Host: <img src="img/heroku-512.png" class="icons"/> Heroku</li>
+        <li>Dom&iacute;nio: <img src="img/reg_br.jpg" class="icons"></li>
+      </ul>
+    </section>
+    <section>
+      <img src="img/language_rank.png"/>
+      <small>Fonte: <a href="http://redmonk.com/sogrady/2016/02/19/language-rankings-1-16/">RedMonk</a></small>
+    </section>
+    <section>
+      <p><img src="img/nodejs.png" height="100"></p>
+      <ul>
+        <li class="fragment fade-in">Motor JavaScript do Chrome</li>
+        <li class="fragment fade-in">Baseado em eventos</li>
+        <li class="fragment fade-in"><i>Non-blocking</i></li>
+        <li class="fragment fade-in">Pacotes <img src="img/npm_logo.png" class="icons"></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Pr&oacute;ximo exemplo: edi&ccedil;&atilde;o!</h2>
+      <p>Online: criar um reposit&oacute;rio <img src="img/github_logo.png" class="icons">, editar <img
+          src="img/c9_logo.png" class="icons"/>, publicar <img src="img/heroku-512.png" class="icons"/></p>
+      <ul>
+        <p>Precisamos de mais algumas contas:</p>
+        <li><img src="img/github_logo.png" class="icons"/> <a href="http://github.com" target="_blank">Github</a></li>
+        <li><img src="img/c9_logo.png" class="icons"/> <a href="http://c9.io" target="_blank">Cloud 9</a></li>
+      </ul>
+      <div class="fragment">#ficaadica: vamos precisar disso:
+<pre><code class="hljs">
 $ git add .
 $ git commit -m "O QUE MUDAMOS"
 $ git push
-                    </code></pre>
-                </div>
-            </section>
-            <section>
-                <h2>Nome &eacute; tudo!</h2>
-                <p>empresa.com.br</p>
-                <ul>
-                    <p>&Uacute;ltima conta:</p>
-                    <li>
-                        <a href="http://registro.br" target="_blank"><img src="img/reg_br.jpg" class="icons" /></a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Pr&oacute;ximo exemplo</h2>
-                <p>Edi&ccedil;&atilde;o offline: editar <img src="img/webstorm.png" class="icons" /> &amp; publicar <img src="img/heroku-512.png" class="icons" /></p>
-                <p><a href="https://forgeboxviewer.herokuapp.com/" target="_blank">Integra&ccedil;&atilde;o Forge &amp; Box</a> [<a href="https://github.com/Developer-Autodesk/model.derivative-nodejs-box.viewer" target="_blank">c&oacute;digo fonte</a>]</p>
-            </section>
-            <section>
-                <h2>Pr&oacute;ximos passos</h2>
-                <ul>
-                    <li><img src="img/forge_logo.png" class="icons" /> <a href="http://developer.autodesk.com">developer.autodesk.com</a> [documenta&ccedil;&atilde;o]</li>
-                    <li><img src="img/github_logo.png" class="icons" /> /<a href="http://github.com/developer-autodesk">developer-autodesk</a> [exemplos]</li>
-                    <li><img src="img/typepad_logo.png" class="icons"> <a href="http://adndevblog.typepad.com/cloud_and_mobile/">adndevblog.typepad.com</a> [blogs]</li>
-                </ul>
-            </section>
-            <section data-background-video="img/Avaliacao_Aplicativo_AUBR16.mp4" data-background-video-loop data-background-video-muted>
-                <h2 class="fragment fade-in" style="color:#FFFFFF;text-shadow: 2px 2px 4px #000000;">Lembre-se de avaliar!</h2>
-            </section>
-            <section data-background-image="img/background_AU_logo.png">
-                <p>Obrigado!</p>
-                <p><img src="img/linkedin.png" class="icons"> /in/augustomaia
-                    <br/>
-                    <img src="img/github_logo.png" class="icons"> /augustogoncalves
-                    <br/>
-                    <img src="img/twitter_logo.png" class="icons"> /@augustomaia</p>
-            </section>
-        </div>
-        <div class='reveal'>
-            <div class='footer'>
-                <img src="img/aubrasil_logo.png" height="50">
-            </div>
-        </div>
+</code></pre>
+      </div>
+    </section>
+    <section>
+      <h2>Nome &eacute; tudo!</h2>
+      <p>empresa.com.br</p>
+      <ul>
+        <p>&Uacute;ltima conta:</p>
+        <li>
+          <a href="http://registro.br" target="_blank"><img src="img/reg_br.jpg" class="icons"/></a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Pr&oacute;ximo exemplo</h2>
+      <p>Edi&ccedil;&atilde;o offline com <img src="img/webstorm.png" class="icons"/> WebStorm</p>
+      <p><a href="https://forgeboxviewer.herokuapp.com/" target="_blank">Integra&ccedil;&atilde;o Forge &amp; Box</a>
+        [<a href="https://github.com/Developer-Autodesk/model.derivative-nodejs-box.viewer" target="_blank">c&oacute;digo
+          fonte</a>]</p>
+    </section>
+    <section>
+      <h2>Pr&oacute;ximos passos</h2>
+      <ul>
+        <li><img src="img/forge_logo.png" class="icons"/> <a
+            href="http://developer.autodesk.com">developer.autodesk.com</a> [documenta&ccedil;&atilde;o]
+        </li>
+        <li><img src="img/github_logo.png" class="icons"/> /<a href="http://github.com/developer-autodesk">developer-autodesk</a>
+          [exemplos]
+        </li>
+        <li><img src="img/typepad_logo.png" class="icons"> <a href="http://adndevblog.typepad.com/cloud_and_mobile/">adndevblog.typepad.com</a>
+          [blogs]
+        </li>
+      </ul>
+    </section>
+    <section data-background-video="img/Avaliacao_Aplicativo_AUBR16.mp4" data-background-video-loop
+             data-background-video-muted>
+      <h2 class="fragment fade-in" style="color:#FFFFFF;text-shadow: 2px 2px 4px #000000;">Lembre-se de avaliar!</h2>
+    </section>
+    <section data-background-image="img/background_AU_logo.png">
+      <p>Obrigado!</p>
+      <p><img src="img/linkedin.png" class="icons"> /in/augustomaia
+        <br/>
+        <img src="img/twitter_logo.png" class="icons"> /@augustomaia</p>
+
+      <img src="img/qr_code_presentation.jpg" style="position: absolute; top: 0; left: 0; border: 0;"/>
+    </section>
+  </div>
+  <div class='reveal'>
+    <div class='footer'>
+      <img src="img/aubrasil_logo.png" height="50">
     </div>
+  </div>
+</div>
+<a href="https://github.com/augustogoncalves/AUBrasil2016">
+  <img style="position: absolute; top: 0; right: 0; border: 0;"
+       src="img/forkme.png"
+       alt="Fork AUBrasil2016 on GitHub">
+</a>
+<script src="js/reveal.js"></script>
+<script src="lib/js/html5shiv.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script language="javascript">
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-    <script src="js/reveal.js"></script>
-    <script src="lib/js/html5shiv.js"></script>
-    <script src="lib/js/head.min.js"></script>
-    <script language="javascript">
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
-
-            transition: 'convex', // none/fade/slide/convex/concave/zoom
-            backgroundTransition: 'convex',
-            dependencies: [
-                {
-                    src: 'lib/js/classList.js',
-                    condition: function () {
-                        return !document.body.classList;
-                    }
-                },
-                {
-                    src: 'plugin/markdown/marked.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'plugin/markdown/markdown.js',
-                    condition: function () {
-                        return !!document.querySelector('[data-markdown]');
-                    }
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function () {
-                        hljs.initHighlightingOnLoad();
-                    }
-                },
-                {
-                    src: 'plugin/zoom-js/zoom.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
-                }
-				]
-        });
-    </script>
+    transition: 'convex', // none/fade/slide/convex/concave/zoom
+    backgroundTransition: 'convex',
+    dependencies: [
+      {
+        src: 'lib/js/classList.js',
+        condition: function () {
+          return !document.body.classList;
+        }
+      },
+      {
+        src: 'plugin/markdown/marked.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: 'plugin/markdown/markdown.js',
+        condition: function () {
+          return !!document.querySelector('[data-markdown]');
+        }
+      },
+      {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function () {
+          hljs.initHighlightingOnLoad();
+        }
+      },
+      {
+        src: 'plugin/zoom-js/zoom.js',
+        async: true
+      },
+      {
+        src: 'plugin/notes/notes.js',
+        async: true
+      }
+    ]
+  });
+</script>
 </body>
 
 </html>
